@@ -171,10 +171,27 @@ h1, h2, h3, .logo { font-family: 'Poppins', 'Inter', sans-serif; }
   gap: 24px;
 }
 .stat {
+  display: flex;
+  align-items: center;
+  gap: 18px;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 20px 24px;
+  padding: 18px 22px;
+}
+.stat-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  background: rgba(201,154,63,0.16);
+  color: var(--navy);
+}
+.stat-text {
+  display: flex;
+  flex-direction: column;
 }
 .stat-num {
   display: block;
