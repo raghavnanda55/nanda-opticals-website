@@ -239,6 +239,15 @@ h1, h2, h3, .logo { font-family: 'Poppins', 'Inter', sans-serif; }
   max-width: 150px;
   object-fit: contain;
 }
+.brand-list li.brand-logo img[src*="visionspring"] {
+  height: 64px;
+  max-width: 220px;
+}
+.brand-list li.brand-logo img[src*="hugoboss"],
+.brand-list li.brand-logo img[src*="lacoste"] {
+  height: 28px;
+  max-width: 110px;
+}
 
 /* Contact */
 .contact-inner {
