@@ -280,6 +280,57 @@ h1, h2, h3, .logo { font-family: 'Poppins', 'Inter', sans-serif; }
   max-width: 110px;
 }
 
+/* FAQ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 820px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 24px;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.faq-item[open] {
+  box-shadow: 0 8px 24px rgba(18,35,61,0.06);
+  border-color: rgba(201,154,63,0.4);
+}
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--gold);
+  transition: transform 0.2s ease;
+}
+.faq-item[open] .faq-chevron { transform: rotate(180deg); }
+.faq-item p {
+  color: var(--muted);
+  margin: 0 0 22px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.faq-item a {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+
 /* Contact */
 .contact-inner {
   display: grid;
